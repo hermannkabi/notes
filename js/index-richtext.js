@@ -1,4 +1,4 @@
-import { checkForLogin } from "/js/login.js";
+import { checkForLogin } from "/notes/js/login.js";
 
 function isWritingBold() {
   return document.queryCommandState('bold');

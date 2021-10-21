@@ -1,4 +1,4 @@
-import {addNote, logOutUser} from "/js/login.js";
+import {addNote, logOutUser} from "/notes/js/login.js";
 
 function showIcon(success){
   var save = $(".new-btn > .new-btn-text");

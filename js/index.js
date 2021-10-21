@@ -1,5 +1,5 @@
 // Note selector and note getter, also sets rich text
-import { getNotes, logOut, updateNote, deleteFile} from "/js/login.js";
+import { getNotes, logOut, updateNote, deleteFile} from "/notes/js/login.js";
 $(".save-check").hide();
 $(".save-fail").hide();
 $(".confirm-btn").hide();
