@@ -1,4 +1,5 @@
 // Note selector and note getter, also sets rich text
+//TODO Add /notes
 import { getNotes, logOut, updateNote, deleteFile} from "/notes/js/login.js";
 $(".save-check").hide();
 $(".save-fail").hide();

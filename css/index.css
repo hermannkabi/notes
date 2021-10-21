@@ -1,3 +1,20 @@
+@media only screen and (max-width: 600px) {
+  .sidebar{
+    margin: 0;
+    margin-right: 0 !important;
+    height: auto !important;
+    padding-bottom: 15px;
+  }
+  .rich-text-editor{
+    position: inherit !important;
+    margin: 15px 10px 0 25px !important;
+  }
+  .note-content{
+    max-width: calc(100vw - 20px) !important;
+    max-height: inherit !important;
+  }
+}
+
 /* Spinner */
 .lds-grid {
   display: inline-block;
@@ -136,7 +153,6 @@ html{
   position: absolute;
   top: 30px;
   display: inline-block;
-
 }
 .sidebar{
   margin: 0;

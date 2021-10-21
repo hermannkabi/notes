@@ -1,3 +1,6 @@
+
+//TODO Add /notes
+
 import { checkForLogin } from "/notes/js/login.js";
 
 function isWritingBold() {

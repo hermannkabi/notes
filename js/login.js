@@ -122,5 +122,5 @@ $(".login.submit").click(function (){
 });
 
 $(".register-btn").click(function (){
-  window.location.replace("register.html");
+  window.location.replace("/register.html");
 });

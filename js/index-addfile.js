@@ -1,3 +1,5 @@
+//TODO Add /notes
+
 import {addNote, logOutUser} from "/notes/js/login.js";
 
 function showIcon(success){
