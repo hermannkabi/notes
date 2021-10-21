@@ -88,7 +88,7 @@ $(".login.submit").click(function (){
     // Signed in
     auth = getAuth();
     console.log("Back to Index");
-    window.location.replace("/index.html");
+    window.location.replace("index.html");
   })
   .catch((error) => {
     const errorCode = error.code;
@@ -122,5 +122,5 @@ $(".login.submit").click(function (){
 });
 
 $(".register-btn").click(function (){
-  window.location.replace("/register.html");
+  window.location.replace("register.html");
 });
