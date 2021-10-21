@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta charset="utf-8">
+    <title>Notes</title>
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Andada+Pro:ital@1&family=Montserrat&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://kit.fontawesome.com/d62327c7a1.js" crossorigin="anonymous"></script>
+
+  </head>
+  <body>
+    <div class="loading">
+      <div class="lds-grid"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>
+    </div>
+    <div class="notes">
+      <div class="sidebar">
+        <h1 class="logo-title">Notes</h1>
+        <button style="display: block;" class="logout-btn" type="button" name="button">
+          <font class="new-btn-text">Log out</font>
+          <i  style="width:83px;color:green" class="fas fa-check save-check" hidden></i>
+          <i  style="width:83px; color:red" class="fas fa-times save-fail" hidden></i>
+        </button>
+        <input class="new-title" type="text" name="" value="" placeholder="New Note Title">
+        <button class="new-btn" type="button" name="button">
+          <font class="new-btn-text">Create New</font>
+          <i  style="width:83px;color:green" class="fas fa-check save-check" hidden></i>
+          <i  style="width:83px; color:red" class="fas fa-times save-fail" hidden></i>
+        </button>
+      </div>
+      <div class="rich-text-editor">
+        <button title="Bold" class="bold-btn toggle-btn" type="button" name="button"><p style="font-weight:bold;" class="btn-text">B</p></button>
+        <button title="Italic" class="italic-btn toggle-btn" type="button" name="button"><p style="font-style:italic" class="btn-text">I</p></button>
+        <button title="Underline" class="underline-btn toggle-btn" type="button" name="button"><p style="text-decoration:underline" class="btn-text">U</p></button>
+        <button title="Strikethrough" class="st-btn toggle-btn" type="button" name="button"><p style="text-decoration:line-through" class="btn-text">S</p></button>
+        <div style="display:inline-block;" class="spacer"></div>
+        <button title="Normal Text" class="p-btn toggle-btn" type="button" name="button"><p class="btn-text">P</p></button>
+        <button title="Heading 1" class="h1-btn toggle-btn" type="button" name="button"><p class="btn-text">H<sub>1</sub></p></button>
+        <button title="Heading 3" class="h3-btn toggle-btn" type="button" name="button"><p class="btn-text">H<sub>3</sub></p></button>
+        <div class="second-row">
+          <button title="Save file" class="save-btn toggle-btn" type="button" name="button">
+            <i class="fas fa-save btn-text"></i>
+            <i  style="color:green" class="fas fa-check save-check btn-text" hidden></i>
+            <i  style="color:red" class="fas fa-times save-fail btn-text" hidden></i>
+          </button>
+
+          <button title="Delete file" class="trash-alt-btn toggle-btn" type="button" name="button">
+            <i style="color:red;" class="fas fa-trash-alt btn-text"></i>
+            <i  style="color:green" class="fas fa-check save-check btn-text" hidden></i>
+            <i  style="color:red" class="fas fa-times save-fail btn-text" hidden></i>
+          </button>
+          <button title="Confirm?" class="confirm-btn toggle-btn" type="button" name="button"><p class="btn-text">Confirm?</p></button>
+        </div>
+
+        <p class="note-content" style="outline: 0px solid transparent;"contenteditable="true"></p>
+      </div>
+    </div>
+
+
+    <script type="module" src="js/index.js" charset="utf-8"></script>
+    <script type="module" src="js/index-richtext.js" charset="utf-8"></script>
+    <script type="module" src="js/index-addfile.js" charset="utf-8"></script>
+
+  </body>
+</html>
