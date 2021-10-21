@@ -132,6 +132,6 @@ checkForLogin().then(val=>{
 
   }else{
     console.log(user);
-    window.location.replace("/login.html");
+    window.location.replace("login.html");
   }
 });
