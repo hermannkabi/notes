@@ -1,6 +1,6 @@
 // Import the functions you need from the SDKs you need
 import { initializeApp } from "https://www.gstatic.com/firebasejs/9.1.3/firebase-app.js";
-import { getAuth, signInWithEmailAndPassword, signOut } from "https://www.gstatic.com/firebasejs/9.1.3/firebase-auth.js";
+import { getAuth, signInWithEmailAndPassword, signOut, setPersistence, inMemoryPersistence } from "https://www.gstatic.com/firebasejs/9.1.3/firebase-auth.js";
 import { getFirestore, collection, doc, getDocs, query, orderBy, updateDoc, deleteDoc, addDoc } from "https://www.gstatic.com/firebasejs/9.1.3/firebase-firestore.js";
 
 
@@ -87,6 +87,9 @@ $(".login.submit").click(function (){
   .then((userCredential) => {
     // Signed in
     auth = getAuth();
+    setPersistence(auth, inMemoryPersistence).then(()=>{
+      console.log("Persisted");
+    });
     console.log("Back to Index");
     window.location.replace("index.html");
   })
