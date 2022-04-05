@@ -1,0 +1,77 @@
+body, html{
+    background-color: #F9F7F7;
+    overflow: hidden;
+}
+
+.container{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-content{
+    background-color: #DBE2EF;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.title{
+    font-family: "Nanum Gothic Coding", monospace;
+    font-weight:100;
+}
+
+input{
+    display: block;
+    margin: 7px 70px;
+    width: 200px;
+    height: 30px;
+    color: #112d4e;
+    border: 0;
+}
+
+#submit, button{
+    display: block;
+    width: 204px;
+    height: 35px;
+    margin: 0 70px;
+    background-color: #3f72af;
+    color: white;
+    border: 0;
+    cursor: pointer;
+}
+#submit:hover, button:hover{
+    opacity: 80%;
+}
+
+.error-msg, .error-msg-signup{
+    color: #FF5959;
+    font-family: 'Courier New', Courier, monospace;
+    margin: 0 70px;
+    max-width: 200px;
+    text-align: start;
+}
+
+a{
+    margin-bottom: 16px;
+    text-align: start;
+    margin-left: 70px;
+    display: block;
+    color: blue;
+    text-decoration: underline;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: smaller;
+    cursor: pointer;
+}
+
+.top-margin, .bottom-margin{
+    height: 35px;
+}
+
+.forgot-text, .signup-text{
+    font-family: 'Courier New', Courier, monospace;
+    margin-left: 70px;
+    max-width: 200px;
+    text-align: center;
+}

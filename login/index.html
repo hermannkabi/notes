@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Log In to Notes</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic+Coding&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script> 
+</head>
+<body>
+    <div class="container">
+        <div class="main-content">
+            <div class="main-content">
+                <div class="top-margin"></div>
+                <h1 class="title">Sign In</h1>
+                <br>
+                <form action="javascript:void(0);">
+                    <input type="email" id="email" placeholder="Your email address">
+                    <br>
+                    <input type="password" id="pwd" placeholder="Password">
+                    <a id="forgotpwd">Forgot password?</a>
+
+                    <p class="error-msg"></p>
+                    <button id="submit" type="submit">Sign In</button>
+                    <a id="signup">Sign Up</a>
+                </form>
+                <div class="bottom-margin"></div>
+                
+            </div>
+            <div class="top-margin"></div>
+            <div class="main-content forgot-div" hidden>
+                <h1 class="title">Forgot password?</h1>
+                <br>
+                <form class="forgot-form" action="javascript:void(0)">
+                    <input type="email" name="" id="forgot-input" placeholder="Input email">
+                    <button type="submit" id="forgot-submit">Get password</button>
+                </form>
+                <p class="forgot-text" hidden>If you have an account, an email will be sent to you!</p>
+                <div class="bottom-margin"></div>
+
+            </div>
+            <div class="top-margin"></div>
+            <div class="main-content signup-div" hidden>
+                <h1 class="title">Sign Up</h1>
+                <br>
+                <form class="signup-form" action="javascript:void(0)">
+                    <input type="text" name="" id="signup-input-name" placeholder="Your name">
+                    <input type="email" name="" id="signup-input-email" placeholder="Your email">
+                    <br>
+                    <input type="password" name="" id="signup-input-pwd" placeholder="Create a password">
+                    <input type="password" name="" id="signup-input-pwd-rep" placeholder="Repeat password">
+
+                    <p class="error-msg-signup"></p>
+                    <button type="submit" id="signup-submit">Sign up</button>
+                </form>
+                <p class="signup-text" hidden>You have successfully signed up!</p>
+                <div class="bottom-margin"></div>
+
+            </div>
+        </div>
+    </div>
+    <script src="/dist/login.js"></script>
+
+</body>
+</html>
