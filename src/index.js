@@ -90,7 +90,7 @@ onAuthStateChanged(auth, async (user) => {
     // User is signed out
     // Redirect to login screen
     console.log("Not logged in!");
-    window.location.href = "/login";
+    window.location.href = "login";
   }
 });
 

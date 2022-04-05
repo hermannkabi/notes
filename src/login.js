@@ -28,7 +28,7 @@ onAuthStateChanged(auth, (user)=>{
   if(user){
     //Logged in
     //Redirect back to home page (notes page)
-    window.location.href = "/";
+    window.location.href = "/notes";
   }
 });
 
